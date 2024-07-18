@@ -1,5 +1,5 @@
 -- premake5.lua
-workspace "New Project"
+workspace "Project No Tap"
    architecture "x64"
    configurations { "Debug", "Release", "Dist" }
    startproject "App"
@@ -10,8 +10,8 @@ workspace "New Project"
 
 OutputDir = "%{cfg.system}-%{cfg.architecture}/%{cfg.buildcfg}"
 
-group "Core"
-	include "Core/Build-Core.lua"
+group "NoTapCore"
+	include "No-Tap-Core/Build-Core.lua"
 group ""
 
-include "App/Build-App.lua"
+include "No-Tap-App/Build-App.lua"
